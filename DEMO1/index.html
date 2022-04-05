@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1St Array</title>
+</head>
+
+<body>
+    <script>
+        // cách khai báo 1
+        let motArray = [4, 2, 6, 1]; // chạy từ 0 -> 0 1 2 3 -> độ dài bằng 4
+        console.log(motArray[0]); //4
+        console.log(motArray[4]); // undefined
+        // cách khai báo 2 
+        let nameArr = new Array("Phuoc", "Kim", "Anh");
+        console.log(nameArr[0]); // Phuoc
+        console.log(nameArr[3]); // undefined
+        // get length lấy độ dài
+        console.log(nameArr.length);
+        // gán giá trị
+        nameArr[3] = "GAU";
+        console.log(nameArr);
+        // for in
+        for (const index in nameArr) {
+            console.log(index + "- Hello " + nameArr[index]);
+        }
+        // for 
+        for (let index = 0; index < nameArr.length; index++) {
+            console.log("hí " + nameArr[index]);
+        }
+    </script>
+</body>
+
+</html>

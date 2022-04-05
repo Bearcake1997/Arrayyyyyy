@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let studentArr = ["Phước", "Anh", "Thành", "Uyên"];
+        // add new elm
+        studentArr.push("Nguyên");
+        studentArr[studentArr.length] = "Hiền";
+        console.log(studentArr);
+        // mang -> chuoi
+        console.log(studentArr.join(" - "));
+        // reverse [1,2,3] -> [3,2,1]
+        console.log(studentArr.reverse());
+        console.log(studentArr.reverse().join());
+        // sort
+        studentArr.sort();
+        console.log(studentArr);
+        console.log(studentArr.join("->"));
+        // sort lớn đến bé
+        studentArr.sort(function (a, b) {
+            return b - a;
+        });
+        console.log(studentArr);
+        // shift
+        studentArr.shift(); // rmv 1st elm
+        console.log(studentArr);
+        studentArr.unshift("Nhân"); // add to 1st index
+        console.log(studentArr);
+        // delete last elm
+        studentArr.pop();
+        console.log(studentArr);
+    </script>
+</body>
+
+</html>
