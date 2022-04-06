@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Welcome to the showwww</p>
+    <input type="number" id="addNum">
+    <button onclick="add()">Add</button>
+    <button onclick="display()">Display</button>
+    <span id="text"></span>
+<script>
+    var numArr = []
+
+    function add() {
+        var stg = document.getElementById('addNum').value;
+        console.log(stg);
+        numArr.push(stg)
+    }
+
+    function display() {
+        let kq = document.getElementById("text");
+        let spa = '';
+        for (let i = 0; i < numArr.length; i++) {
+            spa += '<p>Element ' + i + ' = ' + numArr[i] + '</p>';
+        }
+        kq.innerHTML = spa;
+    }
+</script>
+</body>
+</html>
