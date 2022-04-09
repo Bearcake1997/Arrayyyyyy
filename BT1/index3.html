@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <input type="text" id="input">
+    <span id="output" style="color:rgb(8, 80, 80)"></span> -->
+    <script>
+        // input.addEventListener('keyup', function () {
+        //     var input = document.getElementById('input');
+        //     var output = document.getElementById('output');
+        //     var checkstr = "AÁÀẢÃẠĂẮẰẴẲẶÂBCDĐEÉÈẺẼẸÊFGHIJKLMNOÔƠPQRSTUSVWXYZ"; //uppercase
+        //     checkstr = checkstr.split(''); //[A,B,C...]
+        //     var str = input.value;
+        //     str = str.split(''); //['C','h','à'...]
+        //     for (let i = 0; i < str.length; i++) {
+        //         if (checkstr.includes(str[i])) {
+        //             str[i] = str[i].toLowerCase();
+        //         } else {
+        //             str[i] = str[i].toUpperCase();
+        //         }
+        //     }
+        //     output.innerHTML = str.join('');
+        // })
+    //     input.addEventListener('keyup', function() {
+    //     var str = document.getElementById('input');
+    //     var UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    //     var LOWER = 'abcdefghijklmnopqrstuvwxyz';
+    //     var result = [];
+
+    //     for (var x = 0; x < str.length; x++) {
+    //         if (UPPER.indexOf(str[x]) !== -1) {
+    //             result.push(str[x].toLowerCase());
+    //         } else if (LOWER.indexOf(str[x]) !== -1) {
+    //             result.push(str[x].toUpperCase());
+    //         } else {
+    //             result.push(str[x]);
+    //         }
+    //     }
+    // })
+    //     document.write(result)
+    let message = "Hoàng Trịnh Kim Phước";
+    let arrMess = message.split("");
+    for (let i =0; i < arrMess.length; i++) {
+        if (arrMess[i] == arrMess[i].toUpperCase()) {
+            arrMess[i] = arrMess[i].toLowerCase();
+        } else {
+            arrMess[i] = arrMess[i].toUpperCase();
+        }
+    }
+    message = arrMess.join("");
+    document.write(message);
+    </script>
+</body>
+
+</html>
